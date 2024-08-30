@@ -163,4 +163,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxSpeed: 50
   physics: {fileID: 3168949751678119693}
-  ParticleSystem: {fileID: 6578270880054287632, guid: 5ddb81106b20fad46a79ddfcb6a82963, type: 3}
+  pointValue: 2
+  scoreManager: {fileID: 7148374099638791073, guid: bf9d56506e03dec4ead65629261df81d, type: 3}

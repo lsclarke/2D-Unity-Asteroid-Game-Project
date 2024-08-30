@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ProjectileScript : MonoBehaviour
 {
@@ -13,8 +14,9 @@ public class ProjectileScript : MonoBehaviour
     private float conquaredDistance = 0;
 
     public LayerMask Astroid;
-   
 
+    //This variable calls on the SampleScoreManagerScript, this will allow you to access all pubic components/properties of this script within your current one!
+    public ScoreManager scoreManager;
 
     public void Init(Vector2 direction)
     {
@@ -37,6 +39,8 @@ public class ProjectileScript : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(this.gameObject);
+            scoreManager.scoreValue += 2;
+            scoreManager.scoreText.text = "Score: " + scoreManager.scoreValue;
         }
     }
 }

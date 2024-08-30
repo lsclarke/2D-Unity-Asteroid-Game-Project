@@ -367,6 +367,7 @@ MonoBehaviour:
   Astroid:
     serializedVersion: 2
     m_Bits: 8
+  scoreManager: {fileID: 7148374099638791073, guid: bf9d56506e03dec4ead65629261df81d, type: 3}
 --- !u!114 &2712117466038946004
 MonoBehaviour:
   m_ObjectHideFlags: 0
