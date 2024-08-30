@@ -367,7 +367,6 @@ MonoBehaviour:
   Astroid:
     serializedVersion: 2
     m_Bits: 8
-  ParticleSystem: {fileID: 6578270880054287632, guid: 5ddb81106b20fad46a79ddfcb6a82963, type: 3}
 --- !u!114 &2712117466038946004
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -21,8 +21,9 @@ public class AstroidScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Projectile")
         {
-            Instantiate(ParticleSystem, this.transform.position, Quaternion.identity);
+            //Instantiate(ParticleSystem, this.transform.position, Quaternion.identity);
             Destroy(other.gameObject);
+            Destroy(this.gameObject);
         }
     }
 

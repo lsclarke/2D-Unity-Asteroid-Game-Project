@@ -30,4 +30,13 @@ public class ProjectileScript : MonoBehaviour
             print("Disable Object");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Asteroid")
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
+    }
 }
